@@ -16,7 +16,7 @@ Text createText(Font& font, int size, Color color) {
 void displayText(RenderWindow& window, Text& text, int hcount, Vector2f position) {
 	ostringstream playerScoreString;
 	playerScoreString << hcount;
-	text.setString(L"Собрано камней: " + playerScoreString.str());
+	text.setString(L"Собрано карточек: " + playerScoreString.str());
 	text.setPosition(position);
 	window.draw(text);
 }
